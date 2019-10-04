@@ -98,6 +98,13 @@ function drawCanvas() {
     // clear everything in start
     context.clearRect(0, 0, canvas.width, canvas.height);
 
+    var rotate_x = (pointer.y * -.15) + (motion.y * -1.2);
+    var rotate_y = (pointer.x * .15) + (motion.x * 1.2);
+
+    var transform_string = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg)";
+
+    canvas.style.transform=transform_string;
+
     // Loop through each layer --> draw to canvas
     layer_list.forEach(function (layer, index) {
 
@@ -211,7 +218,7 @@ window.addEventListener('deviceorientation', function (event) {
     /* covering all device orientation */
     if (window.orientation === 0) {
         motion.x = event.gamma - motion_initial.x;
-        motion.y = event.beta -  motion_initial.y;
+        motion.y = event.beta - motion_initial.y;
 
     }
     // portrait
@@ -233,7 +240,7 @@ window.addEventListener('deviceorientation', function (event) {
 });
 
 
-window.addEventListener('orientationchange', function(event){
+window.addEventListener('orientationchange', function (event) {
     motion_initial.x = 0;
     motion_initial.y = 0;
 });
