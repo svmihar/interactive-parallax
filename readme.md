@@ -1,10 +1,5 @@
-to do:
-- [ ] bikin demo
-- [x] update biar tween nya jalan
-- [ ] deploy to heroku
-- [ ] update biar ada gambar customnya
-
 # Interactive Parallax Art
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eacad906-f49b-4cb2-8d81-d68a91fd9b18/deploy-status)](https://app.netlify.com/sites/parallax-art/deploys)
 
 Gyro based or mouse movement art, on a stacked layered png. Layers moved based on accelerometer reading.
 
@@ -14,7 +9,7 @@ Gyro based or mouse movement art, on a stacked layered png. Layers moved based o
 
 ## Getting Started
 
-see demo [here]()
+see live demo [here](https://parallax-art.netlify.com/)
 
 ### Prerequisites
 
