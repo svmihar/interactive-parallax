@@ -6,11 +6,11 @@ to do:
 
 # Interactive Parallax Art
 
-Gyro based art, on a stacked layered png. Layers moved based on accelerometer reading.
+Gyro based or mouse movement art, on a stacked layered png. Layers moved based on accelerometer reading.
 
 ## Screenshot
 
-![]()
+![](img/../images/demo.gif)
 
 ## Getting Started
 
